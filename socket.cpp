@@ -235,7 +235,6 @@ int Socket::select(std::vector<Socket> *reads,
                    std::vector<Socket> *exceptions,
                    int timeout)
 {
-    // Got from: https://github.com/KMakowsky/Socket.cpp/blob/master/Socket.cpp
     //int id = reads->at(0).sockfd;
     struct timeval tv;
     fd_set readfds;
